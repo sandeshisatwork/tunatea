@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — TUNA TEA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">🍵</span> TUNA<span>TEA</span></a>
+    <nav class="nav-links">
+      <a href="index.html#products" data-i18n="nav_products">Products</a>
+      <a href="index.html#about" data-i18n="nav_about">About</a>
+      <a href="index.html#gallery" data-i18n="nav_gallery">Gallery</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      <a href="legalinfo.html" data-i18n="nav_legal">Legal</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="langToggle" class="pill-btn">EN / ने</button>
+      <button id="themeToggle" class="icon-btn">🌙</button>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="section-head">
+    <h2 data-i18n="contact_title">Get in Touch</h2>
+    <p data-i18n="contact_sub">Order a blend, ask a question, or just say hello.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3 data-i18n="contact_reach">Reach us</h3>
+      <p>📞 <a href="tel:+9779800000000">+977 980-000-0000</a></p>
+      <p>✉️ <a href="mailto:hello@tunatea.com.np">hello@tunatea.com.np</a></p>
+      <p>📍 Ilam, Province 1, Nepal</p>
+      <p>🕘 Sun–Fri, 9am – 6pm</p>
+    </div>
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent (demo).');">
+      <label><span data-i18n="form_name">Name</span><input required></label>
+      <label><span data-i18n="form_phone">Phone</span><input required></label>
+      <label><span data-i18n="form_msg">Message</span><textarea rows="4" required></textarea></label>
+      <button class="btn primary" data-i18n="form_send">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="copyright small muted">© 2025 TUNA TEA. <span data-i18n="rights">All rights reserved.</span></p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
