@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TUNA TEA — Fresh Brews & Good Vibes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">🍵</span> TUNA<span>TEA</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#products" data-i18n="nav_products">Products</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      <a href="legalinfo.html" data-i18n="nav_legal">Legal</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="langToggle" class="pill-btn" title="Switch language">EN / ने</button>
+      <button id="themeToggle" class="icon-btn" title="Toggle theme">🌙</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow" data-i18n="hero_eyebrow">HANDCRAFTED IN NEPAL</p>
+    <h1 data-i18n="hero_title">Brewed with soul.<br>Served with love.</h1>
+    <p class="lead" data-i18n="hero_lead">
+      TUNA TEA brings you fresh, aromatic teas crafted from locally sourced Himalayan leaves. Explore our blends, browse the gallery, and reach out to order.
+    </p>
+    <div class="hero-cta">
+      <a href="#products" class="btn primary" data-i18n="hero_cta1">Browse Products</a>
+      <a href="contact.html" class="btn ghost" data-i18n="hero_cta2">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=80"
+         alt="TUNA TEA cup of tea">
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+  <div class="section-head">
+    <h2 data-i18n="products_title">Our Products</h2>
+    <p data-i18n="products_sub">Tap a tea to see price and contact details.</p>
+  </div>
+  <div id="productGrid" class="product-grid"></div>
+
+  <!-- Selected product panel -->
+  <div id="selectedPanel" class="selected-panel hidden">
+    <div class="selected-info">
+      <img id="selImg" src="" alt="">
+      <div>
+        <h3 id="selName"></h3>
+        <p id="selDesc" class="muted"></p>
+        <p class="price" id="selPrice"></p>
+      </div>
+    </div>
+    <div class="selected-contact">
+      <p data-i18n="contact_call">Call to order:</p>
+      <a href="tel:+9779800000000" class="phone">+977 980-000-0000</a>
+      <a href="contact.html" class="btn primary small" data-i18n="contact_page">Contact Page</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section alt">
+  <div class="about-wrap">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800&q=80" alt="Tea plantation">
+    </div>
+    <div class="about-text">
+      <h2 data-i18n="about_title">Our Story</h2>
+      <p data-i18n="about_p1">
+        TUNA TEA began in the hills of eastern Nepal, where our founder's grandmother brewed her first pot over a wood fire. Today we blend that same warmth with modern care — hand-picking leaves, roasting in small batches, and packaging fresh for every order.
+      </p>
+      <p data-i18n="about_p2">
+        Every cup carries the story of the farmers we work with, the morning mist of the hills, and the simple joy of slowing down. We're proud to be a Nepali-owned, family-run tea house.
+      </p>
+      <ul class="facts">
+        <li><strong>2018</strong> <span data-i18n="about_f1">Founded in Ilam</span></li>
+        <li><strong>12+</strong> <span data-i18n="about_f2">Signature blends</span></li>
+        <li><strong>100%</strong> <span data-i18n="about_f3">Locally sourced</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <div class="section-head">
+    <h2 data-i18n="gallery_title">Inside Our Tea House</h2>
+    <p data-i18n="gallery_sub">Watch our machines in action and peek at the craft.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item video">
+      <video controls poster="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80">
+        <source src="assets/machine-1.mp4" type="video/mp4">
+      </video>
+      <p data-i18n="gallery_v1">Tea rolling machine</p>
+    </div>
+    <div class="gallery-item video">
+      <video controls poster="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=800&q=80">
+        <source src="assets/machine-2.mp4" type="video/mp4">
+      </video>
+      <p data-i18n="gallery_v2">Roasting & drying</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=80" alt="Tea leaves">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800&q=80" alt="Tea cup">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="logo"><span class="logo-mark">🍵</span> TUNA<span>TEA</span></a>
+      <p class="muted small" data-i18n="footer_tag">Fresh Himalayan teas, brewed with care.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer_links">Quick Links</h4>
+      <a href="#products" data-i18n="nav_products">Products</a><br>
+      <a href="#about" data-i18n="nav_about">About</a><br>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a><br>
+      <a href="legalinfo.html" data-i18n="nav_legal">Legal Info</a>
+    </div>
+    <div>
+      <h4 data-i18n="footer_contact">Contact</h4>
+      <p class="small">📞 +977 980-000-0000</p>
+      <p class="small">✉️ hello@tunatea.com.np</p>
+      <p class="small">📍 Ilam, Nepal</p>
+    </div>
+  </div>
+  <p class="copyright small muted">© 2025 TUNA TEA. <span data-i18n="rights">All rights reserved.</span></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
